@@ -366,6 +366,8 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--index.wxml--&gt;</span><br><span class="line">&lt;view <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  &lt;view <span class="class"><span class="keyword">class</span></span>=<span class="string">"cout-down-sec"</span>&gt;&#123;&#123;sec&#125;&#125;&lt;<span class="regexp">/view&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>view&gt;</span><br></pre></td></tr></table></figure>
 <p>.js文件</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//index.js</span></span><br><span class="line"><span class="keyword">var</span> countDownUtl = <span class="built_in">require</span>(<span class="string">"../../utils/countDownUtil.js"</span>)</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    sec: <span class="string">""</span></span><br><span class="line">  &#125;,</span><br><span class="line">  onLoad: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> that = <span class="keyword">this</span></span><br><span class="line">    <span class="keyword">var</span> totalMsec = <span class="number">50000000</span> <span class="comment">//倒计时的总毫秒数(通常根据业务获取或计算)</span></span><br><span class="line">    countDownUtl.countDown(totalMsec, <span class="number">1000</span>, <span class="function"><span class="keyword">function</span> (<span class="params">res</span>)</span>&#123;</span><br><span class="line">        that.setData(&#123;</span><br><span class="line">          sec:res</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>end</p>
+
           
         
       
@@ -628,6 +630,7 @@
 <li><a href="http://coolshell.cn/articles/5426.html" target="_blank" rel="noopener">简明 Vim 练级攻略</a></li>
 <li><a href="http://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">正则表达式30分钟入门教程</a></li>
 </ul>
+<p>end</p>
 
           
         
