@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="小程序," />
 
 
 
@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="记录学习，记录生活，记录工作，记录一点一滴。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="元泱界的ketil">
-<meta property="og:url" content="https://ketildeng.github.io/index.html">
+<meta name="description" content="代码地址 效果图   直接看countDownUtil.js123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960// 总毫秒数var totalMillisecond;// 计时器var countDownTimer;/**  *">
+<meta name="keywords" content="小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序倒计时封装">
+<meta property="og:url" content="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/index.html">
 <meta property="og:site_name" content="元泱界的ketil">
-<meta property="og:description" content="记录学习，记录生活，记录工作，记录一点一滴。">
+<meta property="og:description" content="代码地址 效果图   直接看countDownUtil.js123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960// 总毫秒数var totalMillisecond;// 计时器var countDownTimer;/**  *">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/sec.gif">
+<meta property="og:image" content="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/tsec.gif">
+<meta property="og:image" content="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/hsec.gif">
+<meta property="og:updated_time" content="2017-12-25T08:06:30.930Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="元泱界的ketil">
-<meta name="twitter:description" content="记录学习，记录生活，记录工作，记录一点一滴。">
+<meta name="twitter:title" content="小程序倒计时封装">
+<meta name="twitter:description" content="代码地址 效果图   直接看countDownUtil.js123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960// 总毫秒数var totalMillisecond;// 计时器var countDownTimer;/**  *">
+<meta name="twitter:image" content="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/sec.gif">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://ketildeng.github.io/"/>
+  <link rel="canonical" href="https://ketildeng.github.io/2017/12/25/小程序倒计时封装/"/>
 
 
 
 
 
-  <title>元泱界的ketil</title>
+  <title>小程序倒计时封装 | 元泱界的ketil</title>
   
 
 
@@ -143,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +252,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/25/小程序倒计时封装/" itemprop="url">小程序倒计时封装</a></h1>
+          <h1 class="post-title" itemprop="name headline">小程序倒计时封装</h1>
         
 
         <div class="post-meta">
@@ -353,9 +356,7 @@
       
 
       
-        
-          
-            <p><a href="https://github.com/KetilDeng/wx_coutDown" target="_blank" rel="noopener">代码地址</a></p>
+        <p><a href="https://github.com/KetilDeng/wx_coutDown" target="_blank" rel="noopener">代码地址</a></p>
 <h5 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h5><img src="/2017/12/25/小程序倒计时封装/sec.gif">
 <img src="/2017/12/25/小程序倒计时封装/tsec.gif">
 <img src="/2017/12/25/小程序倒计时封装/hsec.gif">
@@ -366,8 +367,6 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--index.wxml--&gt;</span><br><span class="line">&lt;view <span class="class"><span class="keyword">class</span></span>=<span class="string">"container"</span>&gt;</span><br><span class="line">  &lt;view <span class="class"><span class="keyword">class</span></span>=<span class="string">"cout-down-sec"</span>&gt;&#123;&#123;sec&#125;&#125;&lt;<span class="regexp">/view&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>view&gt;</span><br></pre></td></tr></table></figure>
 <p>.js文件</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//index.js</span></span><br><span class="line"><span class="keyword">var</span> countDownUtl = <span class="built_in">require</span>(<span class="string">"../../utils/countDownUtil.js"</span>)</span><br><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    sec: <span class="string">""</span></span><br><span class="line">  &#125;,</span><br><span class="line">  onLoad: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> that = <span class="keyword">this</span></span><br><span class="line">    <span class="keyword">var</span> totalMsec = <span class="number">50000000</span> <span class="comment">//倒计时的总毫秒数(通常根据业务获取或计算)</span></span><br><span class="line">    countDownUtl.countDown(totalMsec, <span class="number">1000</span>, <span class="function"><span class="keyword">function</span> (<span class="params">res</span>)</span>&#123;</span><br><span class="line">        that.setData(&#123;</span><br><span class="line">          sec:res</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -382,277 +381,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ketildeng.github.io/2017/12/16/learning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ketil">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar_manji.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="元泱界的ketil">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/16/learning/" itemprop="url">学习资料</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T00:00:00+08:00">
-                2017-12-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/小程序/" rel="tag"># 小程序</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="扯淡"><a href="#扯淡" class="headerlink" title="扯淡"></a>扯淡</h2><h5 id="iOS杂"><a href="#iOS杂" class="headerlink" title="iOS杂"></a>iOS杂</h5><ul>
-<li><a href="https://github.com/Tim9Liu9/TimLiu-iOS" target="_blank" rel="noopener">iOS/Mac开源项目、库</a></li>
-<li><a href="https://github.com/tangqiaoboy/iOSBlogCN" target="_blank" rel="noopener">iOS/Mac 开发博客列表</a></li>
-<li><a href="https://github.com/Aufree/trip-to-iOS" target="_blank" rel="noopener">iOS学习资料整理</a></li>
-<li><a href="https://github.com/xitu/gold-miner" target="_blank" rel="noopener">掘金翻译计划</a></li>
-<li><a href="https://github.com/AshFurrow/C-41" target="_blank" rel="noopener">A sample app by Ash Furrow</a></li>
-</ul>
-<h5 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h5><ul>
-<li><a href="https://github.com/ChenYilong/iOSInterviewQuestions" target="_blank" rel="noopener">面试题集锦</a></li>
-<li><a href="http://m.quzhiboapp.com/?liveId=311#!/intro/115" target="_blank" rel="noopener">iOS 面试小灶直播 - 简历、面试题、进阶 - 孙源Sunny</a></li>
-<li><a href="https://github.com/lzyy/iOS-Developer-Interview-Questions" target="_blank" rel="noopener">面试 iOS 开发时可以问的一些问题</a></li>
-<li><a href="https://hit-alibaba.github.io/interview/" target="_blank" rel="noopener">笔试面试知识整理</a></li>
-</ul>
-<h5 id="iOS组件化"><a href="#iOS组件化" class="headerlink" title="iOS组件化"></a>iOS组件化</h5><ul>
-<li><a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=2651112719&amp;idx=1&amp;sn=691e7e3bcf7d0e24f0ad5de75c19711c&amp;mpshare=1&amp;scene=1&amp;srcid=12114cfC6OdIYkZwzXe8FEqa#rd" target="_blank" rel="noopener">滴滴iOS的组件化实践与优化</a></li>
-<li><a href="http://limboy.me/tech/2016/03/10/mgj-components.html" target="_blank" rel="noopener">蘑菇街App的组件化之路</a></li>
-<li><a href="http://limboy.me/tech/2016/03/14/mgj-components-continued.html" target="_blank" rel="noopener">蘑菇街 App 的组件化之路·续</a></li>
-<li><a href="https://wereadteam.github.io/2016/03/19/iOS-Component/" target="_blank" rel="noopener">WeRead团队博客 - iOS 组件化方案探索</a></li>
-<li><a href="http://www.cocoachina.com/ios/20160929/17610.html" target="_blank" rel="noopener">组件化架构漫谈</a></li>
-<li><a href="http://blog.cnbang.net/tech/3080/" target="_blank" rel="noopener">iOS 组件化方案探索</a></li>
-<li><a href="http://casatwy.com/iOS-Modulization.html" target="_blank" rel="noopener">iOS应用架构谈 组件化方案</a></li>
-<li><a href="http://casatwy.com/modulization_in_action.html" target="_blank" rel="noopener">在现有工程中实施基于CTMediator的组件化方案</a></li>
-</ul>
-<h5 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h5><ul>
-<li><a href="http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/" target="_blank" rel="noopener">iOS 保持界面流畅的技巧</a></li>
-</ul>
-<h5 id="Core-Animation"><a href="#Core-Animation" class="headerlink" title="Core Animation"></a>Core Animation</h5><ul>
-<li><a href="https://zsisme.gitbooks.io/ios-/content/index.html" target="_blank" rel="noopener">iOS核心动画高级技巧</a></li>
-<li><a href="https://github.com/seedante/iOS-Note/wiki/ViewController-Transition" target="_blank" rel="noopener">iOS视图控制器转场详解</a></li>
-<li><a href="https://github.com/seedante/iOS-Note/wiki/Interactive-Animations" target="_blank" rel="noopener">交互式动画</a></li>
-</ul>
-<h5 id="RunLoop"><a href="#RunLoop" class="headerlink" title="RunLoop"></a>RunLoop</h5><ul>
-<li><a href="http://blog.ibireme.com/2015/05/18/runloop/" target="_blank" rel="noopener">深入理解RunLoop</a></li>
-<li><a href="http://v.youku.com/v_show/id_XODgxODkzODI0.html" target="_blank" rel="noopener">视频: iOS线下分享《RunLoop》by 孙源@sunnyxx</a></li>
-</ul>
-<h5 id="clang"><a href="#clang" class="headerlink" title="clang"></a>clang</h5><ul>
-<li><a href="https://pan.baidu.com/s/1miApsAs" target="_blank" rel="noopener">孙源@sunnyxx  clang</a></li>
-</ul>
-<h5 id="编程规范、艺术"><a href="#编程规范、艺术" class="headerlink" title="编程规范、艺术"></a>编程规范、艺术</h5><ul>
-<li><a href="https://github.com/oa414/objc-zen-book-cn#%E5%B1%9E%E6%80%A7%E5%AE%9A%E4%B9%89" target="_blank" rel="noopener">禅与 Objective-C 编程艺术</a></li>
-<li><a href="http://www.csdn.net/article/2015-06-01/2824818-objective-c-style-guide" target="_blank" rel="noopener">raywenderlich.com团队的Objective-C编码风格规范 - 中译</a></li>
-<li><a href="https://github.com/raywenderlich/objective-c-style-guide" target="_blank" rel="noopener">raywenderlich.com团队的Objective-C编码风格规范</a></li>
-<li><a href="https://github.com/raywenderlich/objective-c-style-guide" target="_blank" rel="noopener">raywenderlich.com团队的Objective-C编码风格规范 github地址</a></li>
-<li><a href="https://github.com/RobotsAndPencils/objective-c-style-guide" target="_blank" rel="noopener">Robots &amp; Pencils Objective-C Style Guide</a></li>
-<li><a href="https://github.com/NYTimes/objective-c-style-guide" target="_blank" rel="noopener">NYTimes Objective-C Style Guide</a></li>
-<li><a href="https://github.com/github/objective-c-style-guide" target="_blank" rel="noopener">GitHub objective-c-style-guide</a></li>
-</ul>
-<h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><ul>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
-<li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">git book</a></li>
-<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰git教程</a></li>
-<li><a href="https://backlogtool.com/git-guide/tw/" target="_blank" rel="noopener">猴子都懂的git</a></li>
-<li><a href="http://www.ui.cn/detail/20957.html" target="_blank" rel="noopener">为设计师而作的GitHub的快速学习教程</a></li>
-</ul>
-<h5 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h5><ul>
-<li><a href="https://github.com/huang303513/Debug-Instruments" target="_blank" rel="noopener">调试</a></li>
-</ul>
-<h5 id="证书"><a href="#证书" class="headerlink" title="证书"></a>证书</h5><ul>
-<li><a href="http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html" target="_blank" rel="noopener">漫谈iOS程序的证书和签名机制</a></li>
-<li><a href="https://objccn.io/issue-17-2/" target="_blank" rel="noopener">代码签名探析</a><h5 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h5></li>
-<li><a href="http://blog.devtang.com/2015/11/02/mvc-and-mvvm/#u6784_u9020_ViewModel" target="_blank" rel="noopener">被误解的 MVC 和被神化的 MVVM</a></li>
-<li><a href="http://www.cocoachina.com/ios/20150526/11930.html" target="_blank" rel="noopener">【长篇高能】ReactiveCocoa 和 MVVM 入门</a></li>
-<li><a href="https://www.objc.io/issues/13-architecture/mvvm/" target="_blank" rel="noopener">Introduction to MVVM</a></li>
-<li><a href="http://www.olinone.com/?p=510" target="_blank" rel="noopener">MVVM奇葩说</a></li>
-<li><a href="http://objccn.io/issue-13-1/" target="_blank" rel="noopener">MVVM 介绍</a></li>
-</ul>
-<h5 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h5><ul>
-<li><a href="https://github.com/liuminqian/iOSTechShare" target="_blank" rel="noopener">简单、有层次的描述了iOS技术栈</a></li>
-<li><a href="https://github.com/AutumnsWind/Front-end-tutorial" target="_blank" rel="noopener">最全的资源教程-前端涉及的所有知识体系</a></li>
-<li><a href="https://github.com/phodal/growth-ebook" target="_blank" rel="noopener">Growth: 全栈增长工程师指南</a></li>
-<li><a href="http://blog.knownsec.com/Knownsec_RD_Checklist/index.html" target="_blank" rel="noopener">知道创宇研发技能表v3.1</a></li>
-</ul>
-<h5 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h5><ul>
-<li><a href="http://wiki.jikexueyuan.com/project/swift/" target="_blank" rel="noopener">The Swift Programming Language 中文版</a></li>
-<li><a href="http://letsswift.com/" target="_blank" rel="noopener">Let’s Swift</a></li>
-<li><a href="http://dev.swiftguide.cn/" target="_blank" rel="noopener">Swift 语言指南</a></li>
-<li><a href="https://github.com/ipader/SwiftGuide" target="_blank" rel="noopener">Swift 语言指南 github地址 (这个真的是应有尽有)</a></li>
-<li><a href="https://github.com/ipader/SwiftGuide/blob/master/Featured.md#interfaces" target="_blank" rel="noopener">Swift 开源项目精选</a></li>
-<li><a href="https://github.com/ipader/SwiftGuide/blob/master/Featured-Articles.md" target="_blank" rel="noopener">Swift 文章精选</a></li>
-</ul>
-<h5 id="React-Native"><a href="#React-Native" class="headerlink" title="React Native"></a>React Native</h5><ul>
-<li><a href="http://reactnative.cn/" target="_blank" rel="noopener">React Native 中文网</a></li>
-</ul>
-<h5 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h5><ul>
-<li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017118" target="_blank" rel="noopener">小程序官方开发文档</a></li>
-<li><a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="noopener">CSS参考手册</a></li>
-<li><a href="http://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">HTML参考手册</a></li>
-<li><a href="https://github.com/justjavac/awesome-wechat-weapp" target="_blank" rel="noopener">小程序开发资源汇总</a></li>
-<li><a href="https://github.com/opendigg/awesome-github-wechat-weapp" target="_blank" rel="noopener">小程序开源项目汇总</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">Flex 布局教程：语法篇</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="noopener">Flex 布局教程：实例篇</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/25303493" target="_blank" rel="noopener">30 分钟学会 Flex 布局</a></li>
-<li><a href="https://github.com/Tencent/weui-wxss" target="_blank" rel="noopener">WeUI for 小程序 为微信小程序量身设计</a></li>
-<li><a href="https://github.com/Tencent/wepy" target="_blank" rel="noopener">小程序组件化开发框架</a></li>
-<li><a href="http://www.wxapp-union.com/" target="_blank" rel="noopener">小程序社区</a></li>
-</ul>
-<h5 id="学习网站"><a href="#学习网站" class="headerlink" title="学习网站"></a>学习网站</h5><ul>
-<li><a href="http://www.runoob.com/" target="_blank" rel="noopener">菜鸟教程</a></li>
-<li><a href="http://www.w3school.com.cn/index.html" target="_blank" rel="noopener">W3school</a></li>
-</ul>
-<h5 id="博客-网站"><a href="#博客-网站" class="headerlink" title="博客/网站"></a>博客/网站</h5><ul>
-<li><a href="http://blog.sunnyxx.com/" target="_blank" rel="noopener">孙源</a></li>
-<li><a href="http://blog.ibireme.com/" target="_blank" rel="noopener">郭曜源</a></li>
-<li><a href="http://blog.devtang.com/" target="_blank" rel="noopener">唐巧</a></li>
-<li><a href="https://onevcat.com/#blog" target="_blank" rel="noopener">喵神~王巍</a></li>
-<li><a href="http://blog.cnbang.net/" target="_blank" rel="noopener">bang</a></li>
-<li><a href="http://limboy.me/" target="_blank" rel="noopener">李忠</a></li>
-<li><a href="https://casatwy.com/" target="_blank" rel="noopener">Casa Taloyum</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener">阮一峰</a></li>
-<li><a href="http://nshipster.cn/" target="_blank" rel="noopener">NSHipster 中文版 (文章出自Mattt 大神)</a></li>
-<li><a href="https://store.objccn.io/" target="_blank" rel="noopener">ObjC 中国</a></li>
-<li><a href="https://github.com/nemoTyrant/manong" target="_blank" rel="noopener">码农周刊整理</a></li>
-</ul>
-<h5 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h5><ul>
-<li><a href="http://wiki.ubuntu.org.cn/Unix%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8" target="_blank" rel="noopener">Unix命令大全</a></li>
-<li><a href="http://wiki.ubuntu.org.cn/%E9%A6%96%E9%A1%B5" target="_blank" rel="noopener">Ubuntu 中文站点</a></li>
-<li><a href="http://www.vim.org/" target="_blank" rel="noopener">VIM官网</a></li>
-<li><a href="http://www.vimercn.com/" target="_blank" rel="noopener">VIM中国</a></li>
-<li><a href="http://www2.nsysu.edu.tw/csmlab/unix/vi_command.htm" target="_blank" rel="noopener">VI指令说明</a></li>
-<li><a href="http://coolshell.cn/articles/5426.html" target="_blank" rel="noopener">简明 Vim 练级攻略</a></li>
-<li><a href="http://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">正则表达式30分钟入门教程</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/16/learning/" rel="next" title="学习资料">
+                <i class="fa fa-chevron-left"></i> 学习资料
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -662,10 +420,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -673,6 +432,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -693,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -774,6 +546,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#效果图"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x6548;&#x679C;&#x56FE;" class="headerlink" title="&#x6548;&#x679C;&#x56FE;"></a>&#x6548;&#x679C;&#x56FE;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#直接看countDownUtil-js"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x76F4;&#x63A5;&#x770B;countDownUtil-js" class="headerlink" title="&#x76F4;&#x63A5;&#x770B;countDownUtil.js"></a>&#x76F4;&#x63A5;&#x770B;countDownUtil.js</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#下面看怎么使用"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x4E0B;&#x9762;&#x770B;&#x600E;&#x4E48;&#x4F7F;&#x7528;" class="headerlink" title="&#x4E0B;&#x9762;&#x770B;&#x600E;&#x4E48;&#x4F7F;&#x7528;"></a>&#x4E0B;&#x9762;&#x770B;&#x600E;&#x4E48;&#x4F7F;&#x7528;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -914,6 +702,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
